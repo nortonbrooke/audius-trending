@@ -1,0 +1,40 @@
+.track {
+  min-width: 300px;
+  width: 100%;
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 35px 150px 1fr 35px;
+  grid-gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 4px #c438cd;
+  animation: fadeIn 1s;
+}
+
+.artwork {
+  border-radius: 4px;
+}
+
+.info {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.favorites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--grey);
+  font-size: 12px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
